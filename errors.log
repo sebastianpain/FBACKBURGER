@@ -87,3 +87,4 @@
 2023-11-28T00:03:02.265Z error: User already exists
 2023-11-28T00:03:02.266Z error: User already exists
 2023-11-28T13:25:11.615Z error: Cannot destructure property 'firstName' of 'req.session.user' as it is undefined.
+2023-11-28T21:13:54.290Z error: User already exists
