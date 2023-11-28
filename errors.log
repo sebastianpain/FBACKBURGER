@@ -1,0 +1,88 @@
+2023-11-21T18:37:15.546Z error: Invalid credentials
+2023-11-21T18:37:15.548Z error: Invalid credentials
+2023-11-21T18:53:08.006Z error: Invalid credentials
+2023-11-21T18:53:08.007Z error: Invalid credentials
+2023-11-21T18:53:32.692Z error: Invalid credentials
+2023-11-21T18:53:32.692Z error: Invalid credentials
+2023-11-21T18:53:45.391Z error: Invalid credentials
+2023-11-21T18:53:45.392Z error: Invalid credentials
+2023-11-21T18:54:02.897Z error: Invalid credentials
+2023-11-21T18:54:02.897Z error: Invalid credentials
+2023-11-21T18:54:14.806Z error: Invalid credentials
+2023-11-21T18:54:14.806Z error: Invalid credentials
+2023-11-21T18:55:11.863Z error: Invalid credentials
+2023-11-21T18:55:11.864Z error: Invalid credentials
+2023-11-21T18:55:40.882Z error: Invalid credentials
+2023-11-21T18:55:40.883Z error: Invalid credentials
+2023-11-21T18:56:06.000Z error: Invalid credentials
+2023-11-21T18:56:06.001Z error: Invalid credentials
+2023-11-21T18:56:14.998Z error: Invalid credentials
+2023-11-21T18:56:14.998Z error: Invalid credentials
+2023-11-21T18:57:42.247Z error: Invalid credentials
+2023-11-21T18:57:42.248Z error: Invalid credentials
+2023-11-21T18:58:25.648Z error: Invalid credentials
+2023-11-21T18:58:25.649Z error: Invalid credentials
+2023-11-21T18:58:56.240Z error: Invalid credentials
+2023-11-21T18:58:56.241Z error: Invalid credentials
+2023-11-21T19:00:25.654Z error: Invalid credentials
+2023-11-21T19:00:25.654Z error: Invalid credentials
+2023-11-21T19:00:40.177Z error: Invalid credentials
+2023-11-21T19:00:40.177Z error: Invalid credentials
+2023-11-21T19:53:24.138Z error: Invalid credentials
+2023-11-21T19:53:24.139Z error: Invalid credentials
+2023-11-21T19:53:54.101Z error: Invalid credentials
+2023-11-21T19:53:54.101Z error: Invalid credentials
+2023-11-21T19:55:16.040Z error: Invalid credentials
+2023-11-21T19:55:16.040Z error: Invalid credentials
+2023-11-21T19:55:46.205Z error: Invalid credentials
+2023-11-21T19:55:46.206Z error: Invalid credentials
+2023-11-21T19:56:00.775Z error: Invalid credentials
+2023-11-21T19:56:00.775Z error: Invalid credentials
+2023-11-21T20:33:53.885Z error: Invalid credentials
+2023-11-21T20:33:53.910Z error: Invalid credentials
+2023-11-21T20:34:46.313Z error: Invalid credentials
+2023-11-21T20:34:46.313Z error: Invalid credentials
+2023-11-21T20:34:46.902Z error: Invalid credentials
+2023-11-21T20:34:46.902Z error: Invalid credentials
+2023-11-21T21:18:13.625Z error: Cannot destructure property 'firstName' of 'req.session.user' as it is undefined.
+2023-11-21T21:24:46.379Z error: products validation failed: code: Path `code` is required., thumbnail: Path `thumbnail` is required.
+2023-11-21T21:24:46.380Z error: Cannot read properties of undefined (reading '_id')
+2023-11-21T22:40:58.131Z error: Cannot destructure property 'firstName' of 'req.session.user' as it is undefined.
+2023-11-22T01:58:31.913Z error: Cannot destructure property 'firstName' of 'req.session.user' as it is undefined.
+2023-11-22T02:12:21.465Z error: Cannot destructure property 'firstName' of 'req.session.user' as it is undefined.
+2023-11-22T02:12:24.269Z error: Cannot destructure property 'firstName' of 'req.session.user' as it is undefined.
+2023-11-22T11:10:48.510Z error: Cannot destructure property 'firstName' of 'req.session.user' as it is undefined.
+2023-11-22T13:18:33.146Z error: Cannot destructure property 'firstName' of 'req.session.user' as it is undefined.
+2023-11-22T13:18:37.036Z error: Cannot destructure property 'firstName' of 'req.session.user' as it is undefined.
+2023-11-22T13:19:03.931Z error: Cannot destructure property 'firstName' of 'req.session.user' as it is undefined.
+2023-11-22T13:19:06.142Z error: Cannot destructure property 'firstName' of 'req.session.user' as it is undefined.
+2023-11-22T16:30:11.634Z error: Cannot destructure property 'firstName' of 'req.session.user' as it is undefined.
+2023-11-24T18:11:36.395Z error: Cannot destructure property 'firstName' of 'req.session.user' as it is undefined.
+2023-11-24T18:11:44.029Z error: Cannot destructure property 'firstName' of 'req.session.user' as it is undefined.
+2023-11-25T19:01:21.043Z error: Cannot destructure property 'firstName' of 'req.session.user' as it is undefined.
+2023-11-26T19:13:52.784Z error: Cannot destructure property 'firstName' of 'req.session.user' as it is undefined.
+2023-11-26T19:36:04.301Z error: Invalid credentials
+2023-11-26T19:36:04.301Z error: Invalid credentials
+2023-11-27T12:31:18.071Z error: Cannot destructure property 'firstName' of 'req.session.user' as it is undefined.
+2023-11-27T16:33:13.873Z error: User already exists
+2023-11-27T16:33:33.723Z error: User already exists
+2023-11-27T17:12:10.643Z error: User already exists
+2023-11-27T17:13:04.723Z error: User already exists
+2023-11-27T17:13:04.724Z error: User already exists
+2023-11-27T17:13:25.906Z error: User already exists
+2023-11-27T17:13:25.907Z error: User already exists
+2023-11-27T17:13:54.303Z error: User already exists
+2023-11-27T17:24:39.183Z error: User already exists
+2023-11-27T17:28:12.953Z error: User already exists
+2023-11-27T17:29:12.714Z error: User already exists
+2023-11-27T23:53:36.624Z error: User already exists
+2023-11-27T23:56:25.589Z error: Cannot read properties of null (reading 'products')
+2023-11-27T23:56:28.473Z error: Cannot read properties of null (reading 'products')
+2023-11-27T23:56:40.051Z error: Invalid credentials
+2023-11-27T23:56:40.052Z error: Invalid credentials
+2023-11-28T00:02:33.155Z error: Invalid credentials
+2023-11-28T00:02:33.156Z error: Invalid credentials
+2023-11-28T00:02:33.701Z error: Invalid credentials
+2023-11-28T00:02:33.701Z error: Invalid credentials
+2023-11-28T00:03:02.265Z error: User already exists
+2023-11-28T00:03:02.266Z error: User already exists
