@@ -36,7 +36,7 @@ async function importModels() {
 			break;
 
 		default:
-			throw new Error(`El tipo de persistencia "${process.env.persistence}" no es válido.`);
+			throw new Error(`El tipo de persistencia "${env.persistence}" no es válido.`);
 	}
 
 	return models;
