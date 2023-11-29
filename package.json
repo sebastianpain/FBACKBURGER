@@ -2,14 +2,14 @@
   "name": "fbackendburguers",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "type": "module",
   "engines": {
     "node": "20.10.0"
   },
   "scripts": {
-    "start": "node ./src/index.js --mode PRODUCTION",
-    "dev": "nodemon -e yaml,js ./src/index.js --mode DEVELOPMENT",
+    "start": "node ./src/app.js --mode PRODUCTION",
+    "dev": "nodemon -e yaml,js ./src/app.js --mode DEVELOPMENT",
     "test": "mocha --timeout 10000 test/supertest.test.js"
   },
   "repository": {
