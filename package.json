@@ -17,7 +17,7 @@
     "url": ""
   },
   "keywords": [],
-  "author": "",
+  "author": "Sebastian Ramirez <sebastianramirezpain@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/sebastianpain/FbackBurger/issues"
@@ -56,12 +56,14 @@
     "sweetalert2": "^11.6.13",
     "toastify-js": "^1.12.0",
     "twilio": "^4.14.1",
-    "winston": "^3.10.0"
+    "winston": "^3.10.0",
+    "yarn": "^1.22.21"
   },
   "devDependencies": {
     "chai": "^4.3.8",
     "mocha": "^10.2.0",
     "nodemon": "^3.0.1",
     "supertest": "^6.3.3"
-  }
+  },
+  "private": false
 }
