@@ -8,7 +8,7 @@ program.parse();
 dotenv.config({
   path:
     program.opts().mode === "DEVELOPMENT"
-      ? "./.env.production"
+      ? "./.env"
       : "./.env.production",
 });
 
