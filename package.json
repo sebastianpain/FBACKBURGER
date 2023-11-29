@@ -2,7 +2,7 @@
   "name": "fbackendburguers",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "type": "module",
   "engines": {
     "node": "20.x"
