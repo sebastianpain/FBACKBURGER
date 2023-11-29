@@ -1,9 +1,9 @@
-FROM node:21
+FROM node:18
 
-WORKDIR /index
+WORKDIR /app
 
 COPY package*.json ./
-
+k
 RUN npm install
 
 COPY . .
