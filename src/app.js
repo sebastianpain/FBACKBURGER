@@ -1,6 +1,6 @@
 import express from "express";
 import MongoStore from "connect-mongo";
-import "express-async-errors";
+import expressAsyncErrors from 'express-async-errors';
 import compression from "express-compression";
 import handlebars from "express-handlebars";
 import session from "express-session";
@@ -81,7 +81,7 @@ iniPassport();
 app.use(passport.initialize());
 app.use(passport.session());
 
-// SWAGGER DOCUMENTATION
+// SWAGGER DOCUMENTATION //
 const swaggerOptions = {
   definition: {
     openapi: "3.0.1",
@@ -96,7 +96,7 @@ const swaggerOptions = {
 const specs = swaggerJSDoc(swaggerOptions);
 app.use("/api/doc", swaggerUiExpress.serve, swaggerUiExpress.setup(specs));
 
-// ENDPOINTS
+// ENDPOINTS //
 app.use("/api/products", productsApiRouter);
 app.use("/api/carts", cartsApiRouter);
 app.use("/api/users", usersApiRouter);
@@ -113,7 +113,7 @@ app.get("/api/sessions/githubcallback", passport.authenticate("github", { failur
   };
   res.redirect("/home");
 });
-// PLANTILLAS
+// PLANTILLAS // 
 app.use("/", login);
 app.use("/home", home);
 app.use("/recovery", recovery);
