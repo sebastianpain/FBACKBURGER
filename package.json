@@ -5,7 +5,7 @@
   "main": "app.js",
   "type": "module",
   "engines": {
-    "node": "20.x"
+    "node": "20.10"
   },
   "scripts": {
     "start": "node ./src/app.js --mode PRODUCTION",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/sebastianpain/FbackBurger"
   },
   "keywords": [],
   "author": "Sebastian Ramirez <sebastianramirezpain@gmail.com>",
