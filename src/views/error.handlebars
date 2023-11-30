@@ -3,12 +3,12 @@
     <div class="col g-0">
       <div class="bg-image" style="filter: blur(5px);"></div>
       <div class="contenedorTituloPrincipal">
-        <a href="/"><img src="./images/logo.png" alt="logo" style="width: 300px;" /></a>
+        <a href="/"><img src="/images/logo.png" alt="logo" style="width: 300px;" /></a>
         <h2 class="tituloPrincipal mt-2">HAMBURGUESAS ARGENTINAS</h2>
 
         {{#if errorMsg}}
           <div class="d-flex justify-content-center align-items-center mt-5 p-3">
-            <img src="./images/error.png" class="me-3" alt="error" width="50px" />
+            <img src="/images/error.png" class="me-3" alt="error" width="50px" />
             <h4 class="text-white mt-1" style="text-transform: uppercase;">{{errorMsg}}</h4>
           </div>
 
@@ -18,7 +18,7 @@
 
         {{else if isLogin}}
           <div class="d-flex justify-content-center align-items-center mt-5 p-3">
-            <img src="./images/error.png" class="me-3" alt="error" width="50px" />
+            <img src="/images/error.png" class="me-3" alt="error" width="50px" />
             <h4 class="text-white mt-1" style="text-transform: uppercase;">{{isLogin}}</h4>
           </div>
 
@@ -27,7 +27,7 @@
             ></i>VOLVER AL INICIO</a>
         {{else if isAdmin}}
           <div class="d-flex justify-content-center align-items-center mt-5 p-3">
-            <img src="./images/error.png" class="me-3" alt="error" width="50px" />
+            <img src="/images/error.png" class="me-3" alt="error" width="50px" />
             <h4 class="text-white mt-1" style="text-transform: uppercase;">{{isAdmin}}</h4>
           </div>
 
@@ -37,7 +37,7 @@
 
         {{else if isUser}}
           <div class="d-flex justify-content-center align-items-center mt-5 p-3">
-            <img src="./images/error.png" class="me-3" alt="error" width="50px" />
+            <img src="/images/error.png" class="me-3" alt="error" width="50px" />
             <h4 class="text-white mt-1" style="text-transform: uppercase;">{{isUser}}</h4>
           </div>
 
@@ -46,7 +46,7 @@
             ></i>VOLVER AL INICIO</a>
         {{else if notCart}}
           <div class="d-flex justify-content-center align-items-center mt-5 p-3">
-            <img src="./images/error.png" class="me-3" alt="error" width="50px" />
+            <img src="/images/error.png" class="me-3" alt="error" width="50px" />
             <h4 class="text-white mt-1" style="text-transform: uppercase;">{{notCart}}</h4>
           </div>
 
@@ -55,7 +55,7 @@
             ></i>VOLVER AL INICIO</a>
         {{else if errorId}}
           <div class="d-flex justify-content-center align-items-center mt-5 p-3">
-            <img src="./images/error.png" class="me-3" alt="error" width="50px" />
+            <img src="/images/error.png" class="me-3" alt="error" width="50px" />
             <h4 class="text-white mt-1" style="text-transform: uppercase;">{{errorId}}</h4>
           </div>
 
@@ -64,7 +64,7 @@
             ></i>VOLVER AL INICIO</a>
         {{else if notFound}}
           <div class="d-flex justify-content-center align-items-center mt-5 p-3">
-            <img src="./images/error.png" class="me-3" alt="error" width="50px" />
+            <img src="/images/error.png" class="me-3" alt="error" width="50px" />
             <h4 class="text-white mt-1" style="text-transform: uppercase;">{{notFound}}</h4>
           </div>
 
@@ -73,7 +73,7 @@
             ></i>VOLVER AL INICIO</a>
         {{else if emailSend}}
           <div class="d-flex justify-content-center align-items-center mt-5 p-3">
-            <img src="./images/checked.png" class="me-3" alt="error" width="50px" />
+            <img src="/images/checked.png" class="me-3" alt="error" width="50px" />
             <h4 class="text-white mt-1" style="text-transform: uppercase;">{{emailSend}}</h4>
           </div>
 
@@ -82,7 +82,7 @@
             ></i>VOLVER AL INICIO</a>
         {{else if noShipping}}
           <div class="d-flex justify-content-center align-items-center mt-5 p-3">
-            <img src="./images/error.png" class="me-3" alt="error" width="50px" />
+            <img src="/images/error.png" class="me-3" alt="error" width="50px" />
             <h4 class="text-white mt-1" style="text-transform: uppercase;">{{noShipping}}</h4>
           </div>
 
@@ -91,7 +91,7 @@
             ></i>VOLVER AL INICIO</a>
         {{else if changePassword}}
           <div class="d-flex justify-content-center align-items-center mt-5 p-3">
-            <img src="./images/checked.png" class="me-3" alt="error" width="50px" />
+            <img src="/images/checked.png" class="me-3" alt="error" width="50px" />
             <h4 class="text-white mt-1" style="text-transform: uppercase;">{{changePassword}}</h4>
           </div>
 
@@ -100,7 +100,7 @@
             ></i>VOLVER AL INICIO</a>
         {{else}}
           <div class="d-flex justify-content-center align-items-center mt-5 p-3">
-            <img src="./images/error.png" class="me-3" alt="error" width="50px" />
+            <img src="/images/error.png" class="me-3" alt="error" width="50px" />
             <h4 class="text-white mt-1" style="text-transform: uppercase;">ERROR DE AUTENTICACION</h4>
 
           </div>
