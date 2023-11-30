@@ -1,9 +1,9 @@
-// BCRYPT//
+// BCRYPT
 import bcrypt from "bcrypt";
 export const createHash = password => bcrypt.hashSync(password, bcrypt.genSaltSync(10));
 export const isValidPassword = (password, hashPassword) => bcrypt.compareSync(password, hashPassword);
 
-// MONGOOSE//
+// MONGOOSE
 import { connect } from "mongoose";
 import env from "../config/enviroment.config.js";
 export async function connectMongo() {
@@ -16,13 +16,13 @@ export async function connectMongo() {
   }
 }
 
-// VALIDATION EMAIL //
+// VALIDACION DE EMAIL
 export function IsValidEmail(email) {
   const patron = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   return patron.test(email);
 }
 
-// CONNECT-SOCKET //
+// CONNECT-SOCKET
 import { Server } from "socket.io";
 import { MsgModel } from "../DAO/mongo/models/msgs.mongoose.js";
 import { ProductsMongoose } from "../DAO/mongo/models/products.mongoose.js";
@@ -180,7 +180,7 @@ export async function sendEmail(to, subject, htmlContent) {
 
 // MULTER
 import multer from "multer";
-import { __dirname } from "../../index.js";
+import { __dirname } from "../app.js";
 
 const profilesStorage = multer.diskStorage({
   destination: (req, file, cb) => {

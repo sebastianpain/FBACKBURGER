@@ -1,6 +1,6 @@
-import express from "express";
 import MongoStore from "connect-mongo";
-import expressAsyncErrors from 'express-async-errors';
+import express from "express";
+import "express-async-errors";
 import compression from "express-compression";
 import handlebars from "express-handlebars";
 import session from "express-session";
@@ -8,35 +8,35 @@ import passport from "passport";
 import FileStore from "session-file-store";
 import swaggerJSDoc from "swagger-jsdoc";
 import swaggerUiExpress from "swagger-ui-express";
-import env from "./src/config/enviroment.config.js";
-import { iniPassport } from "./src/config/passport.config.js";
-import { errorHandler } from "./src/middlewares/main.js";
-import { cartsApiRouter } from "./src/routes/carts-api.router.js";
-import { cartsRouter } from "./src/routes/carts.router.js";
-import { errorRouter } from "./src/routes/error.router.js";
-import { home } from "./src/routes/home.router.js";
-import { loggers } from "./src/routes/loggers.router.js";
-import { login } from "./src/routes/login.router.js";
-import { sendEmailRouter } from "./src/routes/sendEmail.router.js";
-import { mockingProductsRouter } from "./src/routes/mocking-products.router.js";
-import { productsAdminRouter } from "./src/routes/products-admin-router.js";
-import { productsApiRouter } from "./src/routes/products-api.router.js";
-import { productsRouter } from "./src/routes/products.router.js";
-import { recovery } from "./src/routes/recovery.router.js";
-import { purchasesRouter } from "./src/routes/purchases.router.js";
-import { sessionsRouter } from "./src/routes/sessions.router.js";
-import { testChatRouter } from "./src/routes/test-chat.router.js";
-import { usersApiRouter } from "./src/routes/users-api.router.js";
-import { apiTickets } from "./src/routes/tickets.router.js";
-import { usersRouter } from "./src/routes/users.router.js";
-import CustomError from "./src/services/errors/custom-error.js";
-import { connectMongo, connectSocketServer, logger } from "./src/utils/main.js";
-import Errors from "./src/services/errors/enums.js";
+import env from "./config/enviroment.config.js";
+import { iniPassport } from "./config/passport.config.js";
+import { errorHandler } from "./middlewares/main.js";
+import { cartsApiRouter } from "./routes/carts-api.router.js";
+import { cartsRouter } from "./routes/carts.router.js";
+import { errorRouter } from "./routes/error.router.js";
+import { home } from "./routes/home.router.js";
+import { loggers } from "./routes/loggers.router.js";
+import { login } from "./routes/login.router.js";
+import { mockingProductsRouter } from "./routes/mocking-products.router.js";
+import { sendEmailRouter } from "./routes/sendEmail.router.js";
+import { productsAdminRouter } from "./routes/products-admin-router.js";
+import { productsApiRouter } from "./routes/products-api.router.js";
+import { productsRouter } from "./routes/products.router.js";
+import { purchasesRouter } from "./routes/purchases.router.js";
+import { recovery } from "./routes/recovery.router.js";
+import { sessionsRouter } from "./routes/sessions.router.js";
+import { testChatRouter } from "./routes/test-chat.router.js";
+import { apiTickets } from "./routes/tickets.router.js";
+import { usersApiRouter } from "./routes/users-api.router.js";
+import { usersRouter } from "./routes/users.router.js";
+import CustomError from "./services/errors/custom-error.js";
+import Errors from "./services/errors/enums.js";
+import { connectMongo, connectSocketServer, logger } from "./utils/main.js";
 
 // CONFIG BASICAS Y CONEXION A DB
 const app = express();
 app.use(compression({ brotli: { enabled: true, zlib: {} } }));
-const PORT = env.port || 8080;
+const PORT = env.port;
 const fileStore = FileStore(session);
 
 connectMongo();
@@ -81,13 +81,13 @@ iniPassport();
 app.use(passport.initialize());
 app.use(passport.session());
 
-// SWAGGER DOCUMENTATION //
+// SWAGGER DOCUMENTATION
 const swaggerOptions = {
   definition: {
     openapi: "3.0.1",
     info: {
-      title: "Documentación ApiFromArg",
-      description: "Hamburguesas Argentinas ONLINE",
+      title: "Documentación Fuego Burgers API",
+      description: "Tienda Online de Hamburguesas",
     },
   },
   apis: [`${__dirname}/docs/**/*.yaml`],
@@ -96,7 +96,7 @@ const swaggerOptions = {
 const specs = swaggerJSDoc(swaggerOptions);
 app.use("/api/doc", swaggerUiExpress.serve, swaggerUiExpress.setup(specs));
 
-// ENDPOINTS //
+// ENDPOINTS
 app.use("/api/products", productsApiRouter);
 app.use("/api/carts", cartsApiRouter);
 app.use("/api/users", usersApiRouter);
@@ -113,7 +113,7 @@ app.get("/api/sessions/githubcallback", passport.authenticate("github", { failur
   };
   res.redirect("/home");
 });
-// PLANTILLAS // 
+// PLANTILLAS
 app.use("/", login);
 app.use("/home", home);
 app.use("/recovery", recovery);
