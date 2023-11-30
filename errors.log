@@ -94,3 +94,5 @@
 2023-11-29T15:21:18.053Z error: User already exists
 2023-11-29T15:21:24.359Z error: Cannot read properties of null (reading 'products')
 2023-11-30T02:07:46.848Z error: User already exists
+2023-11-30T15:10:18.237Z error: User already exists
+2023-11-30T15:10:30.189Z error: Cannot read properties of null (reading 'products')
