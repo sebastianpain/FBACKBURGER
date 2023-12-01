@@ -25,7 +25,7 @@
     "homepage": "https://github.com/sebastianpain/FbackBurger#readme",
     "dependencies": {
         "@faker-js/faker": "8.0.2",
-        "bcrypt": "5.1.1",
+        "bcrypt": "^5.1.1",
         "bootstrap-icons": "1.10.5",
         "commander": "11.0.0",
         "connect-mongo": "5.0.0",

@@ -49,7 +49,7 @@ const httpServer = app.listen(PORT, () => {
 connectSocketServer(httpServer);
 app.use(
   session({
-    secret: "jhasdkjh671246JHDAhjd",
+    secret: "dasdasdas",
     resave: false,
     saveUninitialized: false,
     store: MongoStore.create({
